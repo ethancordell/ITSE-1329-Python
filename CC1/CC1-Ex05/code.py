@@ -3,7 +3,7 @@ tigers = 3
 bears = 2
 penguins = 3
 otters = 5
-# Add the buffalo here
+buffulo = 7
 
-zoo_animals = lions + tigers + bears + penguins + otters  # Update buffalo here
+zoo_animals = lions + tigers + bears + penguins + otters + buffulo
 print(zoo_animals)
