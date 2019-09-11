@@ -1,3 +1,3 @@
 phrase = 'Python is fun!'
-language = _______ #Fill in blank with your slice
+language = phrase[0:6] #Fill in blank with your slice
 print(language)
