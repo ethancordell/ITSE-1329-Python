@@ -1,9 +1,10 @@
-hours = input('Hours? ')
-if hours > 40:
-    rate = input('Rate? ')*1.5
-    pay = int(hours)*int(rate)
-    print("Pay:", float(pay))
-else:
-    rate = input('Rate? ')
-    pay = int(hours)*int(rate)
+h = input('Hours? ')
+r = input('Rate? ')
+if float(h) > 40 :
+    ot = float(h)-40
+    otr = float(r)*1.5
+    otpay = 40*float(r)+float(ot)*float(otr)
+    print('Pay', float(otpay))
+else :
+    pay = float(h)*float(r)
     print("Pay:", float(pay))
