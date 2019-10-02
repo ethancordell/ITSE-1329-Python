@@ -5,3 +5,4 @@ def count_at_symbols(phrase):
         if char == '@':
             count += 1
     return count
+count_at_symbols('@')
