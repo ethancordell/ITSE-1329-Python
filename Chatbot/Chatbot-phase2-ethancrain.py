@@ -16,7 +16,7 @@ while True: #this while loop allows the code to ask for multiple greetings
     else:
         print('Have a good one,'+' '+first+' '+initial)
     #this part determines whether or not the loop restarts or ends, based on the input
-    answer = input('would you like anorher greeting?: ')
+    answer = input('would you like another greeting?: ')
     if answer == 'yes':
         count = count +1 #this updates the number of greetings received
         continue
