@@ -4,13 +4,10 @@ if file == 'na na boo boo':
     quit()
 else:
     try:
-        if file == 'mbox-short.txt':
-            with open('mbox-short.txt', 'r') as file1:
-                for line in file1:
-                    line = line.rstrip()
-                    print(line.upper())
-        else:
-            quit()
+        with open(file, 'r') as file1:
+            for line in file1:
+                line = line.rstrip()                    
+                print(line.upper())
     except:
         print('File cannot be opened:', file)
         quit()
