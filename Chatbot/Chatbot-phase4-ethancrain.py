@@ -10,7 +10,7 @@ def greeter():
         first = input('What is your first name?: ')
         last = input('What is your last name?: ')
         initial = last[:1]
-        time = rand.randint(1,25)
+        time = rand.randint(1,24)
         print('The current hour is', time)
         #this part of the code determines what the output will be, based on the variable inputs
         if 5 <= time <= 10:
