@@ -1,1 +1,1 @@
-player_info = {'name': '_____', 'score': _____, 'age': _____}
+player_info = {'name': 'Fred', 'score': 14, 'age': 23}
