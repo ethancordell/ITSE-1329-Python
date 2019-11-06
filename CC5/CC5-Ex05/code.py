@@ -6,3 +6,4 @@ result = ''
 for string in strings:
     result = result + string
 result = result.upper()
+print(result)

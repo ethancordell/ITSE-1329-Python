@@ -7,14 +7,15 @@ def greeter():
     time = rand.randint(1,24)
     print('The current hour is', time)
     if 5 <= time <= 10:
-        print('Have a good breakfast,', first, initial)
+        return 'Have a good breakfast,'+' '+first+' '+initial
     elif 11 <= time <=15:
-        print('Have a good lunch,', first, initial)
+        return 'Have a good lunch,'+' '+first+' '+initial
     elif 16 <= time <= 20:
-        print('Have a good dinner,', first, initial)
+        return 'Have a good dinner,'+' '+first+' '+initial
     else:
-        print('Have a good night,', first, initial)
-count=1
+        return 'Have a good night,'+' '+first+' '+initial
+
+counts = dict()
 while True:
     first = input('What is your first name?: ')
     last = input('What is your last name?: ')
@@ -22,8 +23,8 @@ while True:
     print(greeter())
     answer = input('would you like another greeting?: ')
     if answer == 'yes':
-        count = count +1
+        
         continue
     elif answer == 'no':
         break
-print('You received ', str(count), ' greetings')
+#print('You received ', str(count), ' greetings')
