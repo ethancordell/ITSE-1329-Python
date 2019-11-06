@@ -15,7 +15,7 @@ def greeter():
     else:
         return 'Have a good night,'+' '+first+' '+initial
 
-counts = dict()
+counts = {'breakfast': 0, 'lunch': 0, 'dinner': 0, 'night': 0}
 while True:
     first = input('What is your first name?: ')
     last = input('What is your last name?: ')
@@ -23,8 +23,10 @@ while True:
     print(greeter())
     answer = input('would you like another greeting?: ')
     if answer == 'yes':
-        
         continue
     elif answer == 'no':
+        for key in counts:
+            counts[key] = counts.get(key, 0) +1
+            print(key, counts[key])
         break
 #print('You received ', str(count), ' greetings')
